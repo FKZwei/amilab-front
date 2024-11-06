@@ -7,16 +7,12 @@ export const EmpleadoRouter = () => {
     <>
       <NavbarVendedor />
       <Routes>
-        {/* Inicio  */}
+        {/* Página de inicio */}
         <Route path="home" element={<HomeEmpleado />} />
-        {/* Agregar visita  */}
-        {/* Hoja de ruta  */}
-        {/* Desempeño  */}
-        <Route
-          path="*"
-          element={<Navigate to="/vendedor/home" />}
-        />
+        {/* Redirección por defecto */}
+        <Route path="*" element={<Navigate to="/vendedor/home" />} />
       </Routes>
     </>
   );
 };
+

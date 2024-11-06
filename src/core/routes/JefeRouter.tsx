@@ -7,11 +7,10 @@ export const JefeRouter = () => {
     <>
       <NavbarJefe />
       <Routes>
-        {/* Inicio */}
+        {/* Página de inicio */}
         <Route path="home" element={<HomeViewJefe />} />
-        {/* Hojas de ruta */}
-        {/* Gestion de Ventas */}
-        {/* Clientes */}
+
+        {/* Redirección por defecto */}
         <Route path="*" element={<Navigate to="/jefe/home" />} />
       </Routes>
     </>
